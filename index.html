@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="abc">
+    <nav>
+        <div class="bg-div">
+            <img src="logo.png" width="40%" height="auto" ALT="align box" ALIGN=CENTER>
+        </div>
+        <div class="nav-ele">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#des">Description</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <div id="home">
+        <main>
+            <div class="data">
+                <h1><span style="color: #927dfc;">Image</span> <span style="color: #26476e;">Compressor</span></h1>
+                <p>Compress your images to reduce file size without sacrificing quality. Our easy-to-use image compressor tool is fast and free.
+                  Our powerful image compressor tool makes it easy to reduce the file size of your images without compromising on quality. Whether you're a website owner looking to speed up your website or a photographer looking to optimize your images for online sharing, we've got you covered.
+                </p>
+            </div>
+          <div class="wrapper">
+            <div class="upload-box">
+              <input type="file" accept="image/*" id="file-input" onchange="compressImage()" hidden>
+              <img src="upload-icon.svg" alt="">
+              <p>Browse File to Upload</p>
+            </div>
+            <div class="content">
+              <button class="download-btn" onclick="downloadImage()" >Download Image</button>
+              <p class="form-term">By clicking the button, you will be downloading the <span>COMPRESSED IMAGE</span> </p>
+            </div>
+            <img id="compressed-image" src="" style="display:none;">
+          </div>
+        </main>
+        <script src="script.js"></script>
+    </div>
+    <div id="des">
+        <h1>DESCRIPTION</h1>
+        <br>
+        <br>
+        <h2><b>Image Compression</b></h2>
+        <p>When it comes to digital files, compression refers to encoding information using fewer bits than the original file. Essentially, this means taking a large file and turning it into a smaller one.
+
+            There are two types of compression: lossless and lossy. Lossless compression involves removing any empty, needless, or duplicated bits from the original file. This results in a smaller file that maintains the same quality as the original. On the other hand, lossy compression involves removing excessive or unimportant bits from the original file. This creates a smaller file but with a reduction in quality. With lossy compression, the degree to which you want to reduce the file size depends on how much quality loss you're willing to tolerate.
+        </p>
+        <br>
+        <h2><b>Why would you Compress your Images?</b></h2>
+        <p>Images from certain sources, such as professional DSLR cameras, can have very large file sizes, sometimes reaching dozens of megabytes in the case of a JPG file. Depending on your needs, this might be too large. In such cases, compressing the image can be very useful.
+
+            You may also have large images on your phone, which could be consuming a significant amount of storage space and limiting your ability to take more photos. Compressing these images can free up internal storage and help solve this problem.
+        </p>
+        <br>
+        <h2><b>Is it safe to compress Images?</b></h2>
+        <p>
+            There is no need to be worried about the safety of our free service. Your original files will stay untouched on your system, so if you are unhappy with your compressed files, you can simply try again. Also, our unmanned system purges all data after one hour, so you don’t need to worry about the security of your data.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-android"></a>
+    </div>
+</div>
+</body>
+</html>
